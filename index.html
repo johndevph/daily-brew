@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Brew - Your Daily Dose of Coffee</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="coffee-loader">
+            <i class="fas fa-coffee"></i>
+            <p>Loading Daily Brew...</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Daily Brew</h2>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#menu" class="nav-link">Menu</a>
+                <a href="#order" class="nav-link">Order</a>
+                <a href="#reservation" class="nav-link">Reservation</a>
+                <a href="#location" class="nav-link">Location</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Your Daily Dose of Coffee ☕</h1>
+            <p class="hero-subtitle">Experience the perfect blend of premium coffee beans and artisanal brewing techniques</p>
+            <a href="#order" class="cta-button">Order Now</a>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <h2 class="section-title">Our Menu</h2>
+            <p class="section-subtitle">Discover our carefully crafted beverages and delicious treats</p>
+            
+            <div class="menu-tabs">
+                <button class="tab-button active" data-tab="drinks">Drinks</button>
+                <button class="tab-button" data-tab="snacks">Snacks</button>
+            </div>
+
+            <div class="menu-content">
+                <!-- Drinks Menu -->
+                <div class="menu-grid active" id="drinks">
+                    <div class="menu-item">
+                        <img src="https://images.unsplash.com/photo-1579992357154-faf4bde95b3d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZXNwcmVzc298ZW58MHx8MHx8fDA%3D" alt="Espresso" class="menu-item-img">
+                        <div class="menu-item-content">
+                            <h3>Espresso</h3>
+                            <p class="description">Rich and bold single shot of premium coffee</p>
+                            <p class="price">₱120</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://plus.unsplash.com/premium_photo-1673545518947-ddf3240090b1?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Latte" class="menu-item-img">
+                        <div class="menu-item-content">
+                            <h3>Latte</h3>
+                            <p class="description">Smooth espresso with steamed milk and foam art</p>
+                            <p class="price">₱150</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://plus.unsplash.com/premium_photo-1677607237201-64668c2266ab?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Y2FwcHVjY2lub3xlbnwwfHwwfHx8MA%3D%3D" alt="Cappuccino" class="menu-item-img">
+                        <div class="menu-item-content">
+                            <h3>Cappuccino</h3>
+                            <p class="description">Perfect balance of espresso, milk, and foam</p>
+                            <p class="price">₱140</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://images.unsplash.com/photo-1589396575653-c09c794ff6a6?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bW9jaGF8ZW58MHx8MHx8fDA%3D" alt="Mocha" class="menu-item-img">
+                        <div class="menu-item-content">
+                            <h3>Mocha</h3>
+                            <p class="description">Espresso with chocolate syrup and whipped cream</p>
+                            <p class="price">₱160</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://images.unsplash.com/photo-1580661869408-55ab23f2ca6e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YW1lcmljYW5vfGVufDB8fDB8fHww" alt="Americano" class="menu-item-img">
+                        <div class="menu-item-content">
+                            <h3>Americano</h3>
+                            <p class="description">Classic espresso diluted with hot water</p>
+                            <p class="price">₱130</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://media.istockphoto.com/id/2191051012/photo/ready-for-drink-mocha-ice-coffee-serving-with-chocolate-sauce-and-put-on-white-background-and.webp?a=1&b=1&s=612x612&w=0&k=20&c=peBIJqVd8xD2bJ3PCT9SRwdbpjl2HrehaNjhkNbZWC0=" alt="Iced Coffee" class="menu-item-img">
+                        <div class="menu-item-content">
+                            <h3>Iced Coffee</h3>
+                            <p class="description">Chilled coffee served over ice cubes</p>
+                            <p class="price">₱135</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://media.istockphoto.com/id/1161732396/photo/ice-cold-caramel-latte-on-wooden-table-in-cafe.webp?a=1&b=1&s=612x612&w=0&k=20&c=CLDgq-oJg9pYASxG9qaVoUIMr0ekM-ksQ3WOjqtHcpQ=" alt="Caramel Macchiato" class="menu-item-img">
+                        <div class="menu-item-content">
+                            <h3>Caramel Macchiato</h3>
+                            <p class="description">Vanilla syrup, steamed milk, espresso, and caramel drizzle</p>
+                            <p class="price">₱170</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://images.unsplash.com/photo-1616084521924-3dbdfb2e5234?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGZsYXQlMjB3aGl0ZXxlbnwwfHwwfHx8MA%3D%3D" alt="Flat White" class="menu-item-img">
+                        <div class="menu-item-content">
+                            <h3>Flat White</h3>
+                            <p class="description">Espresso with microfoamed milk, velvety texture</p>
+                            <p class="price">₱145</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://images.unsplash.com/photo-1570968915860-54d5c301fa9f?w=400&h=300&fit=crop" alt="Affogato" class="menu-item-img">
+                        <div class="menu-item-content">
+                            <h3>Affogato</h3>
+                            <p class="description">Vanilla ice cream drowned in hot espresso</p>
+                            <p class="price">₱180</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://images.unsplash.com/photo-1504630083234-14187a9df0f5?w=400&h=300&fit=crop" alt="Cold Brew" class="menu-item-img">
+                        <div class="menu-item-content">
+                            <h3>Cold Brew</h3>
+                            <p class="description">Slow-steeped coffee for 12 hours, smooth and less acidic</p>
+                            <p class="price">₱155</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Snacks Menu -->
+                <div class="menu-grid" id="snacks">
+                    <div class="menu-item">
+                        <img src="https://images.unsplash.com/photo-1600521853186-93b88b3a07b0?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGNyb2lzc2FudHxlbnwwfHwwfHx8MA%3D%3D" alt="Croissant" class="menu-item-img">
+                        <div class="menu-item-content">
+                            <h3>Croissant</h3>
+                            <p class="description">Buttery, flaky French pastry</p>
+                            <p class="price">₱85</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://images.unsplash.com/photo-1722251172903-cc8774501df7?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Ymx1ZWJlcnJ5JTIwbXVmZmlufGVufDB8fDB8fHww" alt="Blueberry Muffin" class="menu-item-img">
+                        <div class="menu-item-content">
+                            <h3>Blueberry Muffin</h3>
+                            <p class="description">Moist muffin packed with fresh blueberries</p>
+                            <p class="price">₱95</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://images.unsplash.com/photo-1703219342329-fce8488cf443?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y2hpY2tlbiUyMHNhbmR3aWNofGVufDB8fDB8fHww" alt="Chicken Sandwich" class="menu-item-img">
+                        <div class="menu-item-content">
+                            <h3>Chicken Sandwich</h3>
+                            <p class="description">Grilled chicken with fresh vegetables on artisan bread</p>
+                            <p class="price">₱180</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://plus.unsplash.com/premium_photo-1683121823310-121e5fe5a06d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Z2xhemUlMjBkb251dHxlbnwwfHwwfHx8MA%3D%3D" alt="Glazed Donut" class="menu-item-img">
+                        <div class="menu-item-content">
+                            <h3>Glazed Donut</h3>
+                            <p class="description">Classic ring donut with sweet glaze</p>
+                            <p class="price">₱75</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://plus.unsplash.com/premium_photo-1668772704254-c4c4798b0e5d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y2hvY29sYXRlJTIwY2hpcCUyMGNvb2tpZXxlbnwwfHwwfHx8MA%3D%3D" alt="Chocolate Chip Cookies" class="menu-item-img">
+                        <div class="menu-item-content">
+                            <h3>Chocolate Chip Cookies</h3>
+                            <p class="description">Homemade cookies with premium chocolate chips</p>
+                            <p class="price">₱65</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://images.unsplash.com/photo-1635327173758-85badf17f995?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGNoZWVzZWNha2V8ZW58MHx8MHx8fDA%3D" alt="Cheesecake" class="menu-item-img">
+                        <div class="menu-item-content">
+                            <h3>Cheesecake</h3>
+                            <p class="description">Creamy New York style cheesecake</p>
+                            <p class="price">₱140</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://images.unsplash.com/photo-1726733860096-34a3fbae77c5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8YmFnZWwlMjB3aXRoJTIwY3JlYW0lMjBjaGVlc2V8ZW58MHx8MHx8fDA%3D" alt="Bagel" class="menu-item-img">
+                        <div class="menu-item-content">
+                            <h3>Bagel with Cream Cheese</h3>
+                            <p class="description">Fresh bagel with whipped cream cheese</p>
+                            <p class="price">₱110</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://plus.unsplash.com/premium_photo-1694336203192-c9e7f2891b95?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YXBwbGUlMjBwaWV8ZW58MHx8MHx8fDA%3D" alt="Apple Pie" class="menu-item-img">
+                        <div class="menu-item-content">
+                            <h3>Apple Pie</h3>
+                            <p class="description">Classic apple pie with cinnamon and flaky crust</p>
+                            <p class="price">₱125</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://images.unsplash.com/photo-1724116379273-ba32b70d112c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHRpcmFtaXN1fGVufDB8fDB8fHww" alt="Tiramisu" class="menu-item-img">
+                        <div class="menu-item-content">
+                            <h3>Tiramisu</h3>
+                            <p class="description">Italian dessert with coffee-soaked ladyfingers</p>
+                            <p class="price">₱150</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://images.unsplash.com/photo-1596241913027-34358037e159?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8YmFuYW5hJTIwYnJlYWR8ZW58MHx8MHx8fDA%3D" alt="Banana Bread" class="menu-item-img">
+                        <div class="menu-item-content">
+                            <h3>Banana Bread</h3>
+                            <p class="description">Moist banana bread with walnuts</p>
+                            <p class="price">₱90</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://plus.unsplash.com/premium_photo-1723651309510-676e08493453?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8ZWdnJTIwc2FuZHdpY2h8ZW58MHx8MHx8fDA%3D" alt="Egg Sandwich" class="menu-item-img">
+                        <div class="menu-item-content">
+                            <h3>Egg Sandwich</h3>
+                            <p class="description">Scrambled eggs with cheese on toasted bread</p>
+                            <p class="price">₱120</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://plus.unsplash.com/premium_photo-1671455913268-cce4b291362c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjF8fHByZXR6ZWx8ZW58MHx8MHx8fDA%3D" alt="Pretzel" class="menu-item-img">
+                        <div class="menu-item-content">
+                            <h3>Pretzel</h3>
+                            <p class="description">Warm soft pretzel with salt</p>
+                            <p class="price">₱95</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZnJlbmNoJTIwdG9hc3R8ZW58MHx8MHx8fDA%3D" alt="French Toast" class="menu-item-img">
+                        <div class="menu-item-content">
+                            <h3>French Toast</h3>
+                            <p class="description">Thick slices of bread dipped in egg batter</p>
+                            <p class="price">₱135</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://plus.unsplash.com/premium_photo-1714669889975-90386fbb03e4?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Y2Fycm90JTIwY2FrZXxlbnwwfHwwfHx8MA%3D%3D" alt="Carrot Cake" class="menu-item-img">
+                        <div class="menu-item-content">
+                            <h3>Carrot Cake</h3>
+                            <p class="description">Spiced carrot cake with cream cheese frosting</p>
+                            <p class="price">₱130</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://plus.unsplash.com/premium_photo-1663854478296-dd00b6257021?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cGFuY2FrZXN8ZW58MHx8MHx8fDA%3D" alt="Pancakes" class="menu-item-img">
+                        <div class="menu-item-content">
+                            <h3>Pancakes</h3>
+                            <p class="description">Fluffy pancakes with maple syrup</p>
+                            <p class="price">₱145</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://images.unsplash.com/photo-1589114471223-dec0d8d572c6?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2NvbmV8ZW58MHx8MHx8fDA%3D" alt="Scone" class="menu-item-img">
+                        <div class="menu-item-content">
+                            <h3>Scone</h3>
+                            <p class="description">Buttery scone with jam and clotted cream</p>
+                            <p class="price">₱105</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://images.unsplash.com/photo-1562513872-634b8fae6dbe?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8d2FmZmxlJTIwd2l0aCUyMHN1Z2FyfGVufDB8fDB8fHww" alt="Waffle" class="menu-item-img">
+                        <div class="menu-item-content">
+                            <h3>Waffle</h3>
+                            <p class="description">Crispy waffle with powdered sugar</p>
+                            <p class="price">₱125</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://plus.unsplash.com/premium_photo-1713920189815-876dbdf5f56e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cmVkJTIwdmVsdmV0JTIwY2FrZXxlbnwwfHwwfHx8MA%3D%3D" alt="Red Velvet Cake" class="menu-item-img">
+                        <div class="menu-item-content">
+                            <h3>Red Velvet Cake</h3>
+                            <p class="description">Moist red velvet with cream cheese frosting</p>
+                            <p class="price">₱140</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://images.unsplash.com/photo-1645995575875-ea6511c9d127?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2luYW1tb24lMjByb2xsfGVufDB8fDB8fHww" alt="Cinnamon Roll" class="menu-item-img">
+                        <div class="menu-item-content">
+                            <h3>Cinnamon Roll</h3>
+                            <p class="description">Warm cinnamon roll with icing</p>
+                            <p class="price">₱115</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://images.unsplash.com/photo-1551807501-9263ed1942d8?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHF1aWNoZXxlbnwwfHwwfHx8MA%3D%3D" alt="Quiche" class="menu-item-img">
+                        <div class="menu-item-content">
+                            <h3>Quiche</h3>
+                            <p class="description">Savory egg custard with cheese and vegetables</p>
+                            <p class="price">₱205</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Section -->
+    <section id="order" class="order-section">
+        <div class="container">
+            <h2 class="section-title">Place Your Order</h2>
+            <p class="section-subtitle">Select your favorite items and we'll have them ready for you</p>
+            
+            <form class="order-form" id="orderForm">
+                <div class="form-group">
+                    <label for="customerName">Your Name:</label>
+                    <input type="text" id="customerName" name="customerName" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="customerPhone">Phone Number:</label>
+                    <input type="tel" id="customerPhone" name="customerPhone" required>
+                </div>
+
+                <div class="order-items">
+                    <h3>Select Items:</h3>
+                    <div class="order-item">
+                        <label for="espresso">Espresso:</label>
+                        <select id="espresso" data-price="120">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                    <div class="order-item">
+                        <label for="latte">Latte:</label>
+                        <select id="latte" data-price="150">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                    <div class="order-item">
+                        <label for="cappuccino">Cappuccino:</label>
+                        <select id="cappuccino" data-price="140">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                    <div class="order-item">
+                        <label for="croissant">Croissant:</label>
+                        <select id="croissant" data-price="85">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                    <div class="order-item">
+                        <label for="muffin">Blueberry Muffin:</label>
+                        <select id="muffin" data-price="95">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="total-section">
+                    <h3>Total: ₱<span id="totalPrice">0</span></h3>
+                </div>
+
+                <button type="submit" class="submit-button">Place Order</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section id="reservation" class="reservation-section">
+        <div class="container">
+            <h2 class="section-title">Make a Reservation</h2>
+            <p class="section-subtitle">Reserve your table for a perfect coffee experience</p>
+            
+            <form class="reservation-form" id="reservationForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="resName">Full Name:</label>
+                        <input type="text" id="resName" name="resName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="resPhone">Phone Number:</label>
+                        <input type="tel" id="resPhone" name="resPhone" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="resDate">Date:</label>
+                        <input type="date" id="resDate" name="resDate" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="resTime">Time:</label>
+                        <input type="time" id="resTime" name="resTime" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="resPeople">Number of People:</label>
+                    <select id="resPeople" name="resPeople" required>
+                        <option value="">Select number of people</option>
+                        <option value="1">1 Person</option>
+                        <option value="2">2 People</option>
+                        <option value="3">3 People</option>
+                        <option value="4">4 People</option>
+                        <option value="5">5 People</option>
+                        <option value="6">6 People</option>
+                        <option value="7+">7+ People</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="resNotes">Special Requests (Optional):</label>
+                    <textarea id="resNotes" name="resNotes" rows="3" placeholder="Any special requirements or requests..."></textarea>
+                </div>
+
+                <button type="submit" class="submit-button">Reserve Table</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section id="location" class="location-section">
+        <div class="container">
+            <h2 class="section-title">Find Us</h2>
+            <div class="location-content">
+                <div class="location-info">
+                    <div class="info-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Address</h3>
+                        <p>Purok 6, Sucat, Muntinlupa City</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-wifi"></i>
+                        <h3>Amenities</h3>
+                        <p>Free WiFi Available</p>
+                        <p>Parking Available in Front</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-clock"></i>
+                        <h3>Operating Hours</h3>
+                        <p>Monday - Sunday: 7:00 AM - 10:00 PM</p>
+                    </div>
+                </div>
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3864.758!2d121.045!3d14.408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397cf4b4b5c5c5d%3A0x5c5c5c5c5c5c5c5c!2sSucat%2C%20Muntinlupa%2C%20Metro%20Manila!5e0!3m2!1sen!2sph!4v1234567890"
+                        width="100%" 
+                        height="400" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>09572583745</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>dailybrew@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="social-media">
+                        <h3>Follow Us</h3>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="contactName">Your Name:</label>
+                            <input type="text" id="contactName" name="contactName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactEmail">Your Email:</label>
+                            <input type="email" id="contactEmail" name="contactEmail" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactMessage">Message:</label>
+                            <textarea id="contactMessage" name="contactMessage" rows="5" required placeholder="Your message..."></textarea>
+                        </div>
+                        <button type="submit" class="submit-button">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Daily Brew</h3>
+                    <p>Your perfect coffee destination where every cup tells a story and every moment becomes memorable.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#order">Order</a></li>
+                        <li><a href="#reservation">Reservation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p>📍 Purok 6, Sucat, Muntinlupa City</p>
+                    <p>📞 09572583745</p>
+                    <p>✉️ dailybrew@gmail.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Daily Brew. All rights reserved. | Made with ☕ and ❤️</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Char AI Chatbot -->
+    <div class="chatbot-container">
+        <button class="chatbot-toggle" id="chatbotToggle">
+            <i class="fas fa-comments"></i>
+            Char AI ☕
+        </button>
+        
+        <div class="chatbot-window" id="chatbotWindow">
+            <div class="chatbot-header">
+                <h3>Char AI</h3>
+                <button class="chatbot-close" id="chatbotClose">×</button>
+            </div>
+            
+            <div class="chatbot-messages" id="chatbotMessages">
+                <div class="message ai-message">
+                    <div class="message-bubble">
+                        Hi! I'm Char AI ☕ How can I help you today?
+                    </div>
+                </div>
+            </div>
+            
+            <div class="chatbot-input-container">
+                <div class="typing-indicator" id="typingIndicator">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    Char AI is typing...
+                </div>
+                <form class="chatbot-form" id="chatbotForm">
+                    <input 
+                        type="text" 
+                        id="chatbotInput" 
+                        class="chatbot-input" 
+                        placeholder="Type your message..."
+                        autocomplete="off"
+                    >
+                    <button type="submit" class="chatbot-send" id="chatbotSend">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
